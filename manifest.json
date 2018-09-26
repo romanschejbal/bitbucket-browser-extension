@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Bitbucket w=1",
+  "description": "Adds the w=1 to the URL when browsing bitbucket pull-requests",
+  "author": "Roman Schejbal",
+  "content_scripts": [
+    {
+      "matches": ["*://*.bitbucket.org/*"],
+      "js": ["whitespacify.js"]
+    }
+  ]
+}
